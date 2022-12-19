@@ -1,0 +1,80 @@
+.app-container {
+  padding: 50px;
+}
+
+.main-heading {
+  font-family: 'Roboto';
+  color: #1e293b;
+}
+
+.input-boxes-and-app-img-container {
+  display: flex;
+}
+
+.input-boxes-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-title {
+  font-size: 12px;
+  font-family: 'Roboto';
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.app-img {
+  height: 190px;
+  width: 250px;
+  margin-left: 40px;
+}
+
+.comment-input-box {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  line-height: 5;
+}
+
+.add-comment-btn {
+  color: #dee0e3;
+  background-color: #0284c7;
+  font-family: 'Roboto';
+  border: none;
+  font-size: 10px;
+  border-radius: 2px;
+  padding: 5px;
+  align-self: flex-start;
+}
+
+.seperator {
+}
+
+.comments-count-outer-container {
+  display: flex;
+  align-items: center;
+}
+
+.comments-count-container {
+  background-color: #0284c7;
+  justify-self: flex-start;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.comments-count {
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.comments-text {
+  font-size: 10px;
+  font-family: 'Roboto';
+  color: #1e293b;
+}
+
+.comments-container {
+}
