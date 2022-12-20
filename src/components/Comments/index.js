@@ -31,12 +31,14 @@ class Comments extends Component {
   onAddComment = event => {
     event.preventDefault()
     const {name, comment} = this.state
+
     const newComment = {
       id: uuidv4(),
       name,
       comment,
       isLiked: false,
     }
+
     this.setState(prevState => ({
       commentsList: [...prevState.commentsList, newComment],
       name: '',
@@ -45,7 +47,8 @@ class Comments extends Component {
   }
 
   render() {
-    const {commentsList} = this.state
+    const {commentsList, name, comment} = this.state
+
     return (
       <div className="app-container">
         <h1 className="main-heading">Comments</h1>
@@ -54,13 +57,16 @@ class Comments extends Component {
             <p className="comment-title">
               Say something about 4.0 Technologies
             </p>
+
             <form className="form-container" onSubmit={this.onAddComment}>
               <input
+                value={name}
                 placeholder="Your Name"
                 className="name-input-box"
                 onChange={this.onChangeName}
               />
               <input
+                value={comment}
                 placeholder="Your Comment"
                 className="comment-input-box"
                 onChange={this.onChangeComment}
